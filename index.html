@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pomodoro - FCC</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+	<h1>Pomodoro</h1>
+
+	<div id="wrap">
+		<div class="controls">
+			<span class="label">break length</span>
+			<button id="shorten-break">-</button><span id="break-length">4</span><button id="extend-break">+</button>
+		</div>
+		<div class="controls">
+			<span class="label">session length</span>
+			<button id="shorten-session">-</button><span id="session-length">20</span><button id="extend-session">+</button>
+		</div>
+
+		<div id="clock">
+			<div id="fill"></div>
+			<span id="active-state">Session</span>
+			<span id="time">19:30</span>
+		</div>
+
+		<div id="start-stop">
+			<a href="#" onclick="toggleTimer()">start</a>
+		</div>
+
+		<div id="footer">
+			made by Paweł Trojański
+		</div>
+	</div>
+
+</body>
+</html>
